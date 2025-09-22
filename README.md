@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# SMS Blast
 
-## Get started
+> Bulk SMS sender app with beautiful iOS-style UI components, built using React Native, Expo, and Firebase.
 
-1. Install dependencies
+## Features
 
-   ```bash
+- Send bulk SMS messages quickly and securely
+- Modern iOS-inspired UI (using `react-native-ios-kit` and iOS icons)
+- User authentication and profile management
+- Dark mode support
+- Local SMS history
+- Customizable message and count
+- Backend Node.js server for SMS simulation
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/images/icon.png" alt="App Icon" width="100" />
+</p>
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
+2. **Start the app:**
+   ```sh
    npx expo start
    ```
+3. **(Optional) Start backend for SMS simulation:**
+   ```sh
+   cd backend
+   npm install
+   npm start
+   ```
 
-In the output, you'll find options to open the app in a
+## Folder Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `app/` — Main React Native app code (iOS UI components)
+- `backend/` — Node.js backend for SMS simulation
+- `assets/` — Images and fonts
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Customization
 
-## Get a fresh project
+- Replace app icons and splash images in `assets/images/`
+- Update Firebase config in `firebaseConfig.js`
 
-When you're ready, run:
+## Tech Stack
 
-```bash
-npm run reset-project
-```
+- React Native + Expo
+- react-native-ios-kit (iOS UI components)
+- Firebase Auth & Storage
+- Node.js (backend)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT
